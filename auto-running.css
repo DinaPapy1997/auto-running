@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background-image {
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmoDCU6EsP3cIw06P6j1TwWZ7Vz3v3erRBwQ&usqp=CAU');
+    width: 100%;
+}
+
+.car {
+    margin-top: 400px;
+    width: 200px;
+    padding: 60px 0 90px;
+}
+
+img {
+    animation-name: light-effect;
+    animation-duration: 13s;
+    position: relative;
+    transition: cubic-bezier(.16, .77, 1, 07);
+}
+
+@keyframes light-effect {
+    0% {
+        left: 50px;
+    }
+
+    25% {
+        left: 100px;
+    }
+
+    25% {
+         left: 700px;
+    }
+
+    100% {
+        left: 2000px;
+    }
+}
+    
+.traffic-light {
+    padding: 10px 30px;
+    background-color: black;
+    position: absolute;
+    top: 80px;
+    right: 400px;
+    border-radius: 50px;
+}
+
+.colors * {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgb(86, 84, 84);
+}
+
+.red
+.yellow {
+    margin-bottom: 10px;
+}
+
+.green {
+    background-color: rgb(86, 84, 84)
+    animation-name: lights;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+}
+
+@keyframes lights {
+    0% {
+    background-color: rgb(86, 84, 84);
+    }
+
+    2% {
+    background-color: darkgreen;    
+    }
+
+    98% {
+    background-color: rgb(86, 84, 84);
+    }
+    100% {
+    background-color: darkgreen;   
+    }
+}
+
+.red {
+    background-color: rgb(86, 84, 84);
+    animation-name: ani-red;
+    animation-duration: 1s;
+    animation-delay: 2s;
+}
+
+@keyframes ani-red {
+    from {
+        background-color:rgb(86, 84, 84);
+    }
+
+    to {
+        background-color: rgb(255, 0, 0)
+    }
+}
+
+.yellow {
+    background-color:rgb(86, 84, 84);
+    animation-name: ani-yellow;
+    animation-duration: 0.5s;
+    animation-delay: 3s;
+}
+
+@keyframes ani-yellow {
+    from {
+        background-color: rgb(86, 84, 84);
+    }
+
+    to {
+        background-color: rgb(240, 252, 10)
+    }
+}
+
+.green {
+    background-color :rgb(86, 84, 84);
+    animation-name: ani-green;
+    animation-duration: 2s;
+    animation-delay: 4s;
+}
+
+@keyframes ani-green {
+    from {
+        background-color: rgb(86, 84, 84);
+    }
+    to {
+        background-color: rgb(7, 189, 13)
+    }
+}
